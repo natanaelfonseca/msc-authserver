@@ -1,0 +1,21 @@
+#Configuações do Microservice
+spring:
+  application:
+    name: authserver
+    
+#Configuracoes Relacionadas a como localizar o ConfigServer usando Eureka
+#Nome da aplicação para recuperar as propriedades do configserver
+#obs: Essas configuracoes tem que estar num arquivo chamado bootstrap.yml, senao nao funciona
+  cloud:
+    config:
+      failFast: true
+      retry:
+        initialInterval: 3000
+        multiplier: 1.3
+        maxInterval: 5000
+        maxAttempts: 20
+      discovery:
+        enabled: true
+        service-id: configserver  
+      profile: ${spring.profiles.active:default}
+      name: authserver
