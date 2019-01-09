@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.treinamento</groupId>
-	<artifactId>oauthserver</artifactId>
+	<artifactId>msc-authserver</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>msc-authserver</name>
 	<description>Servidor OAuth usado para segurança dos microserviços</description>

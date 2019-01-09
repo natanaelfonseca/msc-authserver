@@ -17,7 +17,7 @@ while ! `nc -z configserver $(getPort $CONFIGSERVER_PORT)`; do sleep 3; done
 echo "*******  Configuration Server iniciou"
 
 echo "********************************************************"
-echo "Iniciando Zuul Service with $CONFIGSERVER_URI"
+echo "Starting Authentication Service                         "
 echo "********************************************************"
 java -Djava.security.egd=file:/dev/./urandom -Dserver.port=$PORT   \
      -Deureka.client.serviceUrl.defaultZone=$EUREKA_DEFAULT_ZONE   \
